@@ -192,7 +192,7 @@ public class Reference {
                 expectedCR = 1;
             } else if (isBetween(dmgRnd,15,20)) {
                 expectedCR = 2;
-            } else if (isBetween(dmgRnd,21,23)) {
+            } else if (isBetween(dmgRnd,21,26)) {
                 expectedCR = 3;
             } else if (isBetween(dmgRnd,27,32)) {
                 expectedCR = 4;
@@ -368,77 +368,78 @@ public class Reference {
 
             return expectedAtkBonus;
         }
-
+        
         //    input CR to determine expected Save DC
         public int crToExpectedSaveDC(int CR){
-            int expectedSaveDC = 0;
+        int expectedSaveDC = 0;
 
-            if(CR <= 1){
-                expectedSaveDC = 13;
-            } else if(CR==2){
-                expectedSaveDC = 13;
-            } else if(CR==3){
-                expectedSaveDC = 13;
-            } else if(CR==4){
-                expectedSaveDC = 14;
-            } else if(CR==5){
-                expectedSaveDC = 15;
-            } else if(CR==6){
-                expectedSaveDC = 15;
-            } else if(CR==7){
-                expectedSaveDC = 15;
-            } else if(CR==8){
-                expectedSaveDC = 16;
-            } else if(CR==9){
-                expectedSaveDC = 16;
-            } else if(CR==10){
-                expectedSaveDC = 16;
-            } else if(CR==11){
-                expectedSaveDC = 17;
-            } else if(CR==12){
-                expectedSaveDC = 17;
-            } else if(CR==13){
-                expectedSaveDC = 18;
-            } else if(CR==14){
-                expectedSaveDC = 18;
-            } else if(CR==15){
-                expectedSaveDC = 18;
-            } else if(CR==16){
-                expectedSaveDC = 18;
-            } else if(CR==17){
-                expectedSaveDC = 19;
-            } else if(CR==18){
-                expectedSaveDC = 19;
-            } else if(CR==19){
-                expectedSaveDC = 19;
-            } else if(CR==20){
-                expectedSaveDC = 19;
-            } else if(CR==21){
-                expectedSaveDC = 20;
-            } else if(CR==22){
-                expectedSaveDC = 20;
-            } else if(CR==23){
-                expectedSaveDC = 20;
-            } else if(CR==24){
-                expectedSaveDC = 21;
-            } else if(CR==25){
-                expectedSaveDC = 21;
-            } else if(CR==26){
-                expectedSaveDC = 21;
-            } else if(CR==27){
-                expectedSaveDC = 22;
-            } else if(CR==28){
-                expectedSaveDC = 22;
-            } else if(CR==29){
-                expectedSaveDC = 22;
-            } else if(CR==30){
-                expectedSaveDC = 23;
-            }
-
-            return expectedSaveDC;
+        if(CR <= 1){
+            expectedSaveDC = 13;
+        } else if(CR==2){
+            expectedSaveDC = 13;
+        } else if(CR==3){
+            expectedSaveDC = 13;
+        } else if(CR==4){
+            expectedSaveDC = 14;
+        } else if(CR==5){
+            expectedSaveDC = 15;
+        } else if(CR==6){
+            expectedSaveDC = 15;
+        } else if(CR==7){
+            expectedSaveDC = 15;
+        } else if(CR==8){
+            expectedSaveDC = 16;
+        } else if(CR==9){
+            expectedSaveDC = 16;
+        } else if(CR==10){
+            expectedSaveDC = 16;
+        } else if(CR==11){
+            expectedSaveDC = 17;
+        } else if(CR==12){
+            expectedSaveDC = 17;
+        } else if(CR==13){
+            expectedSaveDC = 18;
+        } else if(CR==14){
+            expectedSaveDC = 18;
+        } else if(CR==15){
+            expectedSaveDC = 18;
+        } else if(CR==16){
+            expectedSaveDC = 18;
+        } else if(CR==17){
+            expectedSaveDC = 19;
+        } else if(CR==18){
+            expectedSaveDC = 19;
+        } else if(CR==19){
+            expectedSaveDC = 19;
+        } else if(CR==20){
+            expectedSaveDC = 19;
+        } else if(CR==21){
+            expectedSaveDC = 20;
+        } else if(CR==22){
+            expectedSaveDC = 20;
+        } else if(CR==23){
+            expectedSaveDC = 20;
+        } else if(CR==24){
+            expectedSaveDC = 21;
+        } else if(CR==25){
+            expectedSaveDC = 21;
+        } else if(CR==26){
+            expectedSaveDC = 21;
+        } else if(CR==27){
+            expectedSaveDC = 22;
+        } else if(CR==28){
+            expectedSaveDC = 22;
+        } else if(CR==29){
+            expectedSaveDC = 22;
+        } else if(CR==30){
+            expectedSaveDC = 23;
         }
 
-        //    input ability to determine its ability modifier
+        return expectedSaveDC;
+    }
+
+
+    //    input ability to determine its ability modifier
         public int abilityToModifier(int ability){
             int modifier=0;
 

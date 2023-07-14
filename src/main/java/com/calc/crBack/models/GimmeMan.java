@@ -9,4 +9,5 @@ import lombok.*;
 public class GimmeMan {
     Integer input;
     Integer result;
+    Integer blarf;
 }

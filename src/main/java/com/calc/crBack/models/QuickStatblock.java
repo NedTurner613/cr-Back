@@ -6,13 +6,15 @@ import lombok.Setter;
 @Getter
 @Setter
 public class QuickStatblock {
-    int CR;
+    Integer cr;
 
-    int HP;
-    int AC;
-    int DefCR;
+    Integer hp;
+    Integer ac;
+    Integer defCR;
 
-    int DmgRnd;
-    int Atk;
-    int OffCR;
+    Integer dmgRnd;
+    Integer atk;
+    Integer dc;
+    Boolean atkVsDc;
+    Integer offCR;
 }
